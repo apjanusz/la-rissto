@@ -1,17 +1,17 @@
 // Przykładowe dane — do podmiany po otrzymaniu informacji od restauracji.
 export const restaurant = {
-  address: "ul. Słoneczna 12",
-  city: "15-345 Białystok",
-  phone: "+48 123 456 789",
-  phoneHref: "tel:+48123456789",
-  mapHref: "https://www.google.com/maps/search/?api=1&query=Bia%C5%82ystok",
-  hours: [ ["Pon – Czw", "12:00 – 22:00"], ["Pt – Sob", "12:00 – 23:00"], ["Ndz", "12:00 – 21:00"] ],
+  address: "ul. Bohaterów Westerplatte 13",
+  city: "18-100 Łapy",
+  phone: "+48 794 617 598",
+  phoneHref: "tel:+48794617598",
+  mapHref: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x471fed0001cdb675:0xa5e3c8cb9034329f?sa=X&ved=1t:8290&ictx=111",
+  hours: [ ["Pon – Czw", "12:00 – 22:00"], ["Pt – Sob", "11:00 – 00:00"], ["Ndz", "11:00 – 22:00"] ],
 };
 export const pizzas = [
-  { name: "Margherita", price: 26, image: "margherita", ingredients: "Sos pomidorowy, mozzarella, świeża bazylia, oliwa z oliwek." },
-  { name: "Prosciutto", price: 32, image: "prosciutto", ingredients: "Sos pomidorowy, mozzarella, szynka parmeńska, rukola, parmezan." },
-  { name: "Diavola", price: 31, image: "diavola", ingredients: "Sos pomidorowy, mozzarella, salami pikantne, papryczki chili." },
-  { name: "Funghi", price: 29, image: "funghi", ingredients: "Sos pomidorowy, mozzarella, pieczarki, natka pietruszki." },
-  { name: "Quattro Formaggi", price: 34, image: "formaggi", ingredients: "Mozzarella, gorgonzola, provolone, parmezan." },
-  { name: "Vegetariana", price: 28, image: "vegetariana", ingredients: "Sos pomidorowy, mozzarella, warzywa sezonowe, oliwki, bazylia." },
+  { name: "Margherita", price: 33, image: "margherita", ingredients: "Pomidory san marzano, mozzarella, świeża bazylia" },
+  { name: "Cotto", price: 41, image: "prosciutto", ingredients: "Pomidory san marzano, mozzarella, szynka cotto, świeża bazylia." },
+  { name: "Salame", price: 41, image: "diavola", ingredients: "Pomidory san marzano, mozzarella, salami, oregano." },
+  { name: "Peperoni", price: 44, image: "funghi", ingredients: "Pomidory san marzano, mozzarella, salami spianata, salami napoli, oregano." },
+  { name: "Capricciosa", price: 46, image: "formaggi", ingredients: "Mozzarella, szynka cotto, boczek pancetta, cebula czerwona, pieczarki, oregano." },
+  { name: "Salame Spianata", price: 46, image: "vegetariana", ingredients: "Pomidory san marzano, mozzarella, salami spianata, sos balsamiczny, rukola." },
 ];

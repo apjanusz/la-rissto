@@ -1,0 +1,822 @@
+{
+ "restauracja": {
+  "nazwa": "La Rissto PIZZERIA",
+  "adres": "ul. Bohaterów Westerplatte 13",
+  "telefon": "794 617 598",
+  "uwagi": [
+   "Wszystkie pizze mają średnicę około 32 cm. Dostępna wersja 42 cm tylko na dowóz (cena pod nr tel. lub przy barze).",
+   "Dodatek kremowej burraty: 12 zł."
+  ]
+ },
+ "kategorie": [
+  {
+   "id": "pizza",
+   "nazwa": "Pizza",
+   "opis": "Pizza o średnicy ok. 32 cm. Wersja 42 cm tylko na dowóz (cena pod nr tel. lub przy barze). Dodatek kremowej burraty: 12 zł.",
+   "grupy": [
+    {
+     "nazwa": null,
+     "pozycje": [
+      {
+       "nazwa": "Margherita",
+       "cena": 33,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "bazylia"
+       ]
+      },
+      {
+       "nazwa": "Cotto",
+       "cena": 41,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "szynka cotto",
+        "bazylia"
+       ]
+      },
+      {
+       "nazwa": "Salame",
+       "cena": 41,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "salami",
+        "oregano"
+       ]
+      },
+      {
+       "nazwa": "Peperoni",
+       "cena": 44,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "salami spianata",
+        "salami napoli",
+        "oregano"
+       ]
+      },
+      {
+       "nazwa": "Capricciosa",
+       "cena": 46,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "szynka cotto",
+        "boczek pancetta",
+        "cebula czerwona",
+        "pieczarki",
+        "oregano"
+       ]
+      },
+      {
+       "nazwa": "Salame Spianata",
+       "cena": 46,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "salami spianata",
+        "sos balsamiczny",
+        "rukola"
+       ]
+      },
+      {
+       "nazwa": "Spianata Burratta",
+       "cena": 46,
+       "skladniki": [
+        "pomidory san marzano",
+        "salami spianata",
+        "burrata",
+        "pomidory karmelizowane",
+        "natka pietruszki",
+        "papryczki chili"
+       ]
+      },
+      {
+       "nazwa": "Prosciutto Crudo",
+       "cena": 47,
+       "skladniki": [
+        "pomidory san marzano",
+        "szynka prosciutto crudo",
+        "pomidorki cherry",
+        "parmezan",
+        "rukola"
+       ]
+      },
+      {
+       "nazwa": "Pollo",
+       "cena": 43,
+       "skladniki": [
+        "kurczak",
+        "mozzarella",
+        "cebula karmelizowana",
+        "papryka grillowana",
+        "oregano",
+        "sos śmietankowy"
+       ]
+      },
+      {
+       "nazwa": "Vege",
+       "cena": 43,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "papryka grillowana",
+        "pieczarki",
+        "cebula karmelizowana",
+        "oliwki",
+        "cukinia",
+        "oregano"
+       ]
+      },
+      {
+       "nazwa": "La Rissto",
+       "cena": 46,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "salami spianata",
+        "nduja",
+        "jalapeño",
+        "orzechy włoskie",
+        "rukola",
+        "oregano"
+       ]
+      },
+      {
+       "nazwa": "Formaggi",
+       "cena": 43,
+       "skladniki": [
+        "ser grana padano",
+        "mozzarella",
+        "gorgonzola",
+        "scamorza",
+        "świeży pieprz",
+        "oregano"
+       ]
+      },
+      {
+       "nazwa": "Mortadella Burrata",
+       "cena": 46,
+       "skladniki": [
+        "pesto bazyliowo-śmietanowe",
+        "mortadella",
+        "pomidory karmelizowane",
+        "burrata",
+        "oregano"
+       ]
+      },
+      {
+       "nazwa": "Gamberi",
+       "cena": 56,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "nduja",
+        "krewetki",
+        "cukinia",
+        "oregano"
+       ]
+      },
+      {
+       "nazwa": "Pancetta",
+       "cena": 43,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "boczek pancetta",
+        "cebula",
+        "bazylia"
+       ]
+      },
+      {
+       "nazwa": "Dolce Pancetta",
+       "cena": 46,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "pancetta",
+        "mascarpone",
+        "żurawina"
+       ]
+      },
+      {
+       "nazwa": "Pizza 'Nduja",
+       "cena": 45,
+       "skladniki": [
+        "pomidory gialli",
+        "mozzarella",
+        "'nduja",
+        "papryczka peperoncino",
+        "czerwona cebula",
+        "miód"
+       ]
+      },
+      {
+       "nazwa": "Pizza Funghi",
+       "cena": 50,
+       "skladniki": [
+        "sos śmietanowo-grzybowy",
+        "mozzarella",
+        "kurki",
+        "guanciale",
+        "cebula",
+        "koper"
+       ]
+      },
+      {
+       "nazwa": "Pizza Tonno",
+       "cena": 47,
+       "skladniki": [
+        "pomidory gialli",
+        "mozzarella",
+        "tuńczyk",
+        "kapary",
+        "bazylia",
+        "ser Grana Padano",
+        "stracciatella"
+       ]
+      },
+      {
+       "nazwa": "Pizza Siciliana",
+       "cena": 47,
+       "skladniki": [
+        "pomidory gialli",
+        "mozzarella",
+        "anchois",
+        "papryczka peperoncino",
+        "kapary",
+        "oliwki",
+        "ser Grana Padano"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "makarony",
+   "nazwa": "Makarony",
+   "grupy": [
+    {
+     "nazwa": null,
+     "pozycje": [
+      {
+       "nazwa": "Lasagne",
+       "cena": 45,
+       "skladniki": [
+        "makaron",
+        "sos beszamel",
+        "mięso wołowe",
+        "parmezan"
+       ]
+      },
+      {
+       "nazwa": "Spaghetti a'la Bolognese",
+       "cena": 40,
+       "skladniki": [
+        "makaron",
+        "sos boloński",
+        "mięso wołowe",
+        "parmezan"
+       ]
+      },
+      {
+       "nazwa": "Spaghetti aglio, olio e peperoncino",
+       "cena": 45,
+       "skladniki": [
+        "makaron spaghetti",
+        "pietruszka",
+        "peperoncino",
+        "parmezan",
+        "oliwa",
+        "chili",
+        "czosnek"
+       ]
+      },
+      {
+       "nazwa": "Carbonara",
+       "cena": 45,
+       "skladniki": [
+        "makaron spaghetti",
+        "guanciale",
+        "jajko",
+        "parmezan"
+       ]
+      },
+      {
+       "nazwa": "Tagliatelle alla Gorgonzola",
+       "cena": 50,
+       "skladniki": [
+        "kurczak",
+        "ser gorgonzola",
+        "szpinak"
+       ]
+      },
+      {
+       "nazwa": "Penne ai Gamberetti",
+       "cena": 70,
+       "skladniki": [
+        "makaron penne",
+        "krewetki smażone w sosie aglio olio",
+        "pomidory karmelizowane cherry"
+       ]
+      },
+      {
+       "nazwa": "Ravioli Ricotta di Bufala & Szpinak",
+       "cena": 60,
+       "skladniki": [
+        "ravioli z ricottą di bufala i szpinakiem",
+        "sos śmietanowy",
+        "por",
+        "pomidorki koktajlowe",
+        "szynka crudo"
+       ]
+      },
+      {
+       "nazwa": "Gnocchi",
+       "cena": 60,
+       "skladniki": [
+        "kluseczki ziemniaczane",
+        "krewetki",
+        "czosnek",
+        "pomidorki koktajlowe",
+        "białe wino",
+        "natka pietruszki"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dania-glowne",
+   "nazwa": "Dania główne",
+   "grupy": [
+    {
+     "nazwa": null,
+     "pozycje": [
+      {
+       "nazwa": "Łosoś",
+       "cena": 70,
+       "skladniki": [
+        "grillowany łosoś",
+        "karmelizowane pomidorki cherry",
+        "purée z pietruszki i selera"
+       ]
+      },
+      {
+       "nazwa": "Stek Wołowy",
+       "cena": 95,
+       "skladniki": [
+        "grillowana polędwica wołowa",
+        "ziemniaki w mundurkach lub purée z białych warzyw",
+        "sos pieprzowy lub grzybowy"
+       ]
+      },
+      {
+       "nazwa": "Grillowana pierś",
+       "cena": 35,
+       "skladniki": [
+        "pierś z kurczaka",
+        "mix sałat",
+        "frytki"
+       ]
+      },
+      {
+       "nazwa": "Ośmiornica",
+       "cena": 80,
+       "skladniki": [
+        "grillowana ośmiornica",
+        "sos salsa pomidorowo-paprykowy",
+        "ziemniaki w mundurkach lub grillowane warzywa"
+       ]
+      },
+      {
+       "nazwa": "Pollo ai Funghi",
+       "cena": 50,
+       "skladniki": [
+        "grillowana pierś z kurczaka",
+        "sos śmietanowo-grzybowy",
+        "makaron smażony w sosie aglio e olio"
+       ]
+      },
+      {
+       "nazwa": "Fegato",
+       "cena": 45,
+       "skladniki": [
+        "wątróbka w marynacie z octu balsamicznego",
+        "purée z białych warzyw",
+        "jabłko",
+        "cebula",
+        "miód"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "przystawki-salatki",
+   "nazwa": "Przystawki i sałatki",
+   "grupy": [
+    {
+     "nazwa": "Przystawki",
+     "pozycje": [
+      {
+       "nazwa": "Bruschette",
+       "cena": 25,
+       "skladniki": [
+        "grzanki",
+        "świeże pomidory",
+        "czosnek",
+        "bazylia"
+       ]
+      },
+      {
+       "nazwa": "Gamberi In Salsa",
+       "cena": 45,
+       "skladniki": [
+        "krewetki w sosie czosnkowym",
+        "pomidorki koktajlowe",
+        "rukola",
+        "grzanki"
+       ]
+      },
+      {
+       "nazwa": "Gamberetti Peperoncino",
+       "cena": 40,
+       "skladniki": [
+        "krewetki na bazie masła",
+        "natka pietruszki",
+        "peperoncino",
+        "skórka z cytryny",
+        "mięta",
+        "grzanki"
+       ]
+      },
+      {
+       "nazwa": "Tartare di Manzo",
+       "cena": 50,
+       "skladniki": [
+        "polędwica wołowa",
+        "majonez sezamowy",
+        "czosnek",
+        "cebula",
+        "chipsy z parmezanu",
+        "kapary",
+        "pieczarka marynowana",
+        "pieczywo"
+       ]
+      }
+     ]
+    },
+    {
+     "nazwa": "Sałatki",
+     "pozycje": [
+      {
+       "nazwa": "Insalata",
+       "cena": 50,
+       "skladniki": [
+        "świeże liście sałaty",
+        "rukola",
+        "pomidorki koktajlowe",
+        "ogórek",
+        "papryka",
+        "czerwona cebula",
+        "chipsy z pancetty",
+        "sos vinaigrette"
+       ]
+      },
+      {
+       "nazwa": "Cezar",
+       "cena": 60,
+       "skladniki": [
+        "mix sałat",
+        "pomidorki koktajlowe",
+        "grillowany kurczak",
+        "chipsy z crudo",
+        "grzanki",
+        "parmezan",
+        "sos cezar"
+       ]
+      },
+      {
+       "nazwa": "Insalata di Spinaci",
+       "cena": 45,
+       "skladniki": [
+        "świeży szpinak",
+        "szynka parmeńska",
+        "suszone pomidorki",
+        "burrata",
+        "pestki dyni",
+        "sos balsamiczny"
+       ]
+      },
+      {
+       "nazwa": "Insalata di Gamberetti",
+       "cena": 60,
+       "skladniki": [
+        "mix sałat",
+        "pomidorki koktajlowe",
+        "czerwona cebula",
+        "krewetki",
+        "burrata",
+        "sos balsamiczny"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "burgery",
+   "nazwa": "Burgery",
+   "grupy": [
+    {
+     "nazwa": null,
+     "pozycje": [
+      {
+       "nazwa": "Burger La Rissto",
+       "cena": 40,
+       "skladniki": [
+        "mięso wołowe",
+        "bułka z sezamem",
+        "balsamowany szpinak z czosnkiem",
+        "cebula marynowana",
+        "pomidor",
+        "sos La Rissto",
+        "frytki"
+       ]
+      },
+      {
+       "nazwa": "Burger Classic",
+       "cena": 30,
+       "skladniki": [
+        "mięso wołowe",
+        "bułka z sezamem",
+        "pomidory",
+        "ogórek",
+        "cebula czerwona",
+        "sos La Rissto",
+        "frytki"
+       ]
+      },
+      {
+       "nazwa": "Burger Pollo",
+       "cena": 32,
+       "skladniki": [
+        "polędwiczka z kurczaka",
+        "bułka z sezamem",
+        "sałatka rzymska",
+        "pomidor",
+        "cebula marynowana",
+        "sos La Rissto",
+        "frytki"
+       ]
+      },
+      {
+       "nazwa": "Burger Jalapeño",
+       "cena": 45,
+       "skladniki": [
+        "mięso wołowe",
+        "grillowana pancetta",
+        "bułka z sezamem",
+        "pomidory",
+        "ogórek",
+        "cebula marynowana",
+        "papryczki jalapeño",
+        "sos La Rissto",
+        "frytki"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dla-dzieci",
+   "nazwa": "Dla dzieci",
+   "opis": "Menu Bambini",
+   "grupy": [
+    {
+     "nazwa": null,
+     "pozycje": [
+      {
+       "nazwa": "Spaghetti Bambini",
+       "cena": 28,
+       "skladniki": [
+        "makaron",
+        "pomidory san marzano"
+       ]
+      },
+      {
+       "nazwa": "Pizza Margherita (22 cm)",
+       "cena": 25,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "bazylia"
+       ]
+      },
+      {
+       "nazwa": "Pizza Cotto (22 cm)",
+       "cena": 28,
+       "skladniki": [
+        "pomidory san marzano",
+        "mozzarella",
+        "szynka cotto",
+        "bazylia"
+       ]
+      },
+      {
+       "nazwa": "Filetto",
+       "cena": 25,
+       "skladniki": [
+        "panierowana polędwiczka z kurczaka",
+        "frytki"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "desery",
+   "nazwa": "Desery",
+   "grupy": [
+    {
+     "nazwa": null,
+     "pozycje": [
+      {
+       "nazwa": "Brownie",
+       "cena": 30,
+       "skladniki": [
+        "wilgotne ciasto czekoladowe podawane na sposób domowy"
+       ]
+      },
+      {
+       "nazwa": "Tiramisu",
+       "cena": 30,
+       "skladniki": [
+        "krem mascarpone",
+        "biszkopty nasączone kawą",
+        "kakao"
+       ]
+      },
+      {
+       "nazwa": "La Rissto",
+       "cena": 30,
+       "skladniki": [
+        "deser serwowany na zimno (zmienia się co tydzień)"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "napoje",
+   "nazwa": "Napoje",
+   "grupy": [
+    {
+     "nazwa": "Kawa",
+     "pozycje": [
+      {
+       "nazwa": "Espresso",
+       "cena": 12
+      },
+      {
+       "nazwa": "Espresso Doppio",
+       "cena": 16
+      },
+      {
+       "nazwa": "Americano",
+       "cena": 16
+      },
+      {
+       "nazwa": "Cappuccino",
+       "cena": 16
+      },
+      {
+       "nazwa": "Latte Macchiato",
+       "cena": 16
+      },
+      {
+       "nazwa": "Flat White",
+       "cena": 16
+      }
+     ]
+    },
+    {
+     "nazwa": "Herbata",
+     "pozycje": [
+      {
+       "nazwa": "Czarna",
+       "cena": 12
+      },
+      {
+       "nazwa": "Zielona",
+       "cena": 12
+      },
+      {
+       "nazwa": "Owocowa",
+       "cena": 12
+      }
+     ]
+    },
+    {
+     "nazwa": "Lemoniada",
+     "pozycje": [
+      {
+       "nazwa": "Klasyczna",
+       "cena": 12,
+       "ceny": [
+        {
+         "etykieta": "0,33 l",
+         "cena": 12
+        },
+        {
+         "etykieta": "1 l",
+         "cena": 30
+        }
+       ]
+      },
+      {
+       "nazwa": "Truskawkowa",
+       "cena": 12,
+       "ceny": [
+        {
+         "etykieta": "0,33 l",
+         "cena": 12
+        },
+        {
+         "etykieta": "1 l",
+         "cena": 30
+        }
+       ]
+      },
+      {
+       "nazwa": "Mango",
+       "cena": 12,
+       "ceny": [
+        {
+         "etykieta": "0,33 l",
+         "cena": 12
+        },
+        {
+         "etykieta": "1 l",
+         "cena": 30
+        }
+       ]
+      },
+      {
+       "nazwa": "Arbuz",
+       "cena": 12,
+       "ceny": [
+        {
+         "etykieta": "0,33 l",
+         "cena": 12
+        },
+        {
+         "etykieta": "1 l",
+         "cena": 30
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "nazwa": "Zimne napoje (0,2 l)",
+     "pozycje": [
+      {
+       "nazwa": "Pepsi / Pepsi ZERO",
+       "cena": 9
+      },
+      {
+       "nazwa": "Mirinda",
+       "cena": 9
+      },
+      {
+       "nazwa": "7UP",
+       "cena": 9
+      },
+      {
+       "nazwa": "Sok TOMA (pomarańcza / jabłko / czarna porzeczka)",
+       "cena": 9
+      },
+      {
+       "nazwa": "Woda gazowana / niegazowana",
+       "cena": 8
+      },
+      {
+       "nazwa": "Lipton (peach / green / lemon)",
+       "cena": 9
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

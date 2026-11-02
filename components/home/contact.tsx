@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { restaurant } from "@/lib/restaurant";
+import Reveal from "../Reveal";
 import { ActionLink, Container, SectionLabel } from "./shared";
 
 function ContactIcon({ type }: { type: "pin" | "phone" | "clock" }) {
@@ -12,10 +13,10 @@ function ContactIcon({ type }: { type: "pin" | "phone" | "clock" }) {
 
 export function Contact() {
   return (
-    <section id="kontakt" aria-labelledby="contact-title" className="bg-paper-shade/20 py-10 sm:py-[min(3.8vw,46px)]">
+    <section id="kontakt" aria-labelledby="contact-title" className="overflow-x-clip bg-paper-shade/20 py-10 sm:py-[min(3.8vw,46px)]">
       <Container>
         <div className="grid gap-8 sm:grid-cols-[0.95fr_1fr] sm:items-center sm:gap-[7%] sm:px-[4.8%]">
-          <div>
+          <Reveal direction="left">
             <SectionLabel>KONTAKT</SectionLabel>
             <h2 id="contact-title" className="mt-2 text-[38px] leading-tight sm:text-[clamp(32px,4.4vw,53px)]">Odwiedź nas</h2>
             <address className="mt-3 space-y-2.5 text-[15px] leading-snug not-italic sm:text-[clamp(12px,1.6vw,19px)]">
@@ -27,19 +28,23 @@ export function Contact() {
                 ))}</dl>
               </div></div>
             </address>
-            <div className="mt-5"><ActionLink href={restaurant.mapHref} external compact>Zobacz na mapie</ActionLink></div>
-          </div>
-          <div className="sm:pt-5">
+            <div className="mt-5">
+              <ActionLink href={restaurant.mapHref} external compact showArrow={false}>
+                <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M9 4 3 6.5V20l6-2.5 6 2.5 6-2.5V4l-6 2.5L9 4Z" /><path d="M9 4v13.5M15 6.5V20" /></svg>
+                Zobacz na mapie
+              </ActionLink>
+            </div>
+          </Reveal>
+          <Reveal direction="right" delay={180} className="sm:pt-5">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648.809650735288!2d22.874756512341996!3d52.988822001298004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471fed0001cdb675%3A0xa5e3c8cb9034329f!2sLa%20Rissto%20-%20kuchnia%20w%C5%82oska!5e1!3m2!1spl!2spl!4v1793563610460!5m2!1spl!2spl"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=22.8665%2C52.9858%2C22.8830%2C52.9918&layer=mapnik&marker=52.988822%2C22.874756"
               title="Mapa lokalizacji La Rissto — kuchnia włoska"
               className="aspect-[4/3] w-full border-0"
-              allowFullScreen
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"
             />
-            <Image src="/images/goodbye-final.png" alt="Do zobaczenia!" width={2043} height={770} className="mt-4 h-auto w-[160px] opacity-80 sm:w-[46%]" />
-          </div>
+            <Image src="/images/goodbye-final.png" alt="Do zobaczenia!" width={2043} height={770} className="mx-auto mt-4 h-auto w-[160px] opacity-80 sm:mx-0 sm:w-[46%]" />
+          </Reveal>
         </div>
       </Container>
     </section>

@@ -8,13 +8,50 @@
   --color-ink: #20211e;
   --color-muted: #42433c;
   --color-rule: #d7d3c7;
-  --font-serif: Georgia, "Times New Roman", serif;
+}
+
+@theme inline {
+  --font-serif: var(--font-active), Georgia, "Times New Roman", serif;
 }
 
 @layer base {
-  html { @apply scroll-smooth motion-reduce:scroll-auto; }
+  /* WYBÓR CZCIONKI — zmień jedną wartość:
+     1) var(--font-cormorant)  — Cormorant Garamond: elegancka, lekka, najbliżej stylu ze zdjęcia
+     2) var(--font-playfair)   — Playfair Display: kontrastowa, klasyczna, mocny charakter nagłówków
+     3) var(--font-fraunces)   — Fraunces: ciepła, miękka, "rzemieślnicza" */
+  html { --font-active: var(--font-cormorant); @apply scroll-smooth motion-reduce:scroll-auto; }
   body { @apply bg-paper font-serif text-ink antialiased; }
   a, button { @apply focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink; }
-  section[id] { @apply scroll-mt-6; }
+  section[id] { @apply scroll-mt-24 sm:scroll-mt-28; }
   ::selection { @apply bg-ink text-paper; }
+}
+
+/* ---- Reveal: delikatne, "wolne" pojawianie się elementów (tylko opacity + transform = płynnie na GPU) ---- */
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal[data-direction="left"] { transform: translate3d(-36px, 0, 0); }
+.reveal[data-direction="right"] { transform: translate3d(36px, 0, 0); }
+.reveal[data-direction="none"] { transform: none; }
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal.visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ---- Pizze w tle mobilnego menu: powolne unoszenie ---- */
+@keyframes pizza-float {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(0, -10px, 0) rotate(5deg); }
 }
