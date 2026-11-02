@@ -7,7 +7,7 @@ import Reveal from "@/components/Reveal";
 import { Container, CtaButton, SectionLabel } from "@/components/home/shared";
 
 export const metadata: Metadata = {
-  title: "Galeria — La Rissto Pizzeria",
+  title: "Galeria | La Rissto Pizzeria",
   description: "Zajrzyj do La Rissto: zdjęcia naszych pizz, przystawek, deserów, koktajli i wnętrza lokalu.",
 };
 

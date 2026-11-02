@@ -1,6 +1,3 @@
-/* Pizza widziana z góry — rysunek liniowy z przezroczystymi wypełnieniami, w kolorach włoskiej flagi.
-   Białe, z niewielką liczbą dodatków. Używana w tle mobilnego menu. */
-
 import type { CSSProperties } from "react";
 
 export type PizzaVariant = "pepperoni" | "margherita" | "olive";

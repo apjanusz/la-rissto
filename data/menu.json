@@ -12,7 +12,7 @@
   {
    "id": "pizza",
    "nazwa": "Pizza",
-   "opis": "Pizza o średnicy ok. 32 cm. Wersja 42 cm tylko na dowóz (cena pod nr tel. lub przy barze). Dodatek kremowej burraty: 12 zł.",
+   "opis": "Pizza o średnicy ok. 32 cm. Wersja 42 cm tylko na dowóz (cena pod nr tel. lub przy barze). Dodatek kremowej burraty:\u00A012\u00A0zł.",
    "grupy": [
     {
      "nazwa": null,

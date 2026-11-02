@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Reveal from "../Reveal";
-import { Container } from "./shared";
+import { Container, SectionLabel } from "./shared";
 
 export function About() {
   return (
     <section id="o-nas" aria-labelledby="about-title" className="relative overflow-hidden bg-[linear-gradient(to_bottom,#f4ede1_0%,#f4ede1_80%,rgba(244,237,225,0)_100%)] pb-16 pt-12 sm:pb-[min(8vw,100px)] sm:pt-[min(5vw,64px)]">
-      {/* delikatny wzór — wtapia hero w sekcję */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(#d6c9ae_1px,transparent_1.3px)] [background-size:24px_24px] opacity-45 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_65%,transparent)]" />
       <div aria-hidden="true" className="pointer-events-none absolute -right-24 -top-20 size-[300px] rounded-full bg-[#e8dcc7]/70 sm:-right-[6%] sm:-top-[8%] sm:size-[min(30vw,380px)]" />
       <Image src="/images/olive-header-transparent.png" width={1316} height={1195} alt="" className="pointer-events-none absolute -left-6 -top-4 h-auto w-[130px] opacity-70 sm:w-[min(17vw,220px)]" />
       <Image src="/images/olive-transparent.png" width={1305} height={1206} alt="" className="pointer-events-none absolute -bottom-3 -right-4 h-auto w-[120px] -rotate-[17deg] opacity-70 sm:w-[min(20vw,260px)]" />
@@ -20,10 +18,7 @@ export function About() {
         </Reveal>
 
         <Reveal direction="right" delay={180} className="relative">
-          <div className="flex items-center gap-5 sm:gap-8">
-            <span className="text-[11px] tracking-[0.38em] text-muted sm:text-[clamp(11px,1.3vw,16px)]">O NAS</span>
-            <span aria-hidden="true" className="h-[2px] w-[min(30vw,220px)] bg-[linear-gradient(90deg,#398350,#e5dfd1_50%,#ce4940)]" />
-          </div>
+          <SectionLabel>O NAS</SectionLabel>
           <h2 id="about-title" className="mt-5 text-[40px] leading-[1.08] tracking-[-0.025em] sm:mt-[min(2.4vw,30px)] sm:text-[clamp(34px,5.2vw,68px)]">Pasja do<br />włoskiej kuchni</h2>
           <div className="relative mt-7 pl-6 sm:mt-[min(3.4vw,44px)] sm:pl-[min(3vw,38px)]">
             <span aria-hidden="true" className="absolute inset-y-0 left-0 w-[2px] bg-[linear-gradient(to_bottom,#398350,#e5dfd1_50%,#ce4940)]" />

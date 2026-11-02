@@ -15,10 +15,6 @@
 }
 
 @layer base {
-  /* WYBÓR CZCIONKI — zmień jedną wartość:
-     1) var(--font-cormorant)  — Cormorant Garamond: elegancka, lekka, najbliżej stylu ze zdjęcia
-     2) var(--font-playfair)   — Playfair Display: kontrastowa, klasyczna, mocny charakter nagłówków
-     3) var(--font-fraunces)   — Fraunces: ciepła, miękka, "rzemieślnicza" */
   html { --font-active: var(--font-cormorant); @apply scroll-smooth motion-reduce:scroll-auto; }
   body { @apply bg-paper font-serif text-ink antialiased; }
   a, button { @apply focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink; }
@@ -26,7 +22,6 @@
   ::selection { @apply bg-ink text-paper; }
 }
 
-/* ---- Reveal: delikatne, "wolne" pojawianie się elementów (tylko opacity + transform = płynnie na GPU) ---- */
 .reveal {
   opacity: 0;
   transform: translate3d(0, 28px, 0);

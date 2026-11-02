@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { PhoneIcon } from "@/components/icons";
 import { restaurant } from "@/lib/restaurant";
 import { PizzaIcon, type PizzaVariant } from "./pizza-icon";
 import { Brand, Container } from "./shared";
@@ -12,14 +13,6 @@ const links = [
   ["Galeria", "/galeria"],
   ["Kontakt", "/#kontakt"],
 ] as const;
-
-function PhoneIcon({ className = "size-4 shrink-0" }: { className?: string }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" />
-    </svg>
-  );
-}
 
 /* Pizze w tle mobilnego menu: pozycja + wariant + opóźnienie animacji */
 const pizzaBackdrop: { cls: string; variant: PizzaVariant; delay: number }[] = [
@@ -61,7 +54,7 @@ export function Header() {
       <header className="sticky top-0 z-50 bg-[#e6dcca]/95 shadow-[0_8px_24px_-12px_rgba(32,33,30,0.4)] backdrop-blur">
         <Container>
           <div className={`flex items-center justify-between gap-3 transition-[height,min-height] duration-300 sm:pl-[8%] ${scrolled ? "h-[76px] sm:h-[92px]" : "h-[105px] sm:h-[min(12.8vw,154px)]"}`}>
-            <Link href="/" aria-label="La Rissto — strona główna" className={`origin-left transition-transform duration-300 ${scrolled ? "scale-[0.78]" : "scale-100"}`}><Brand /></Link>
+            <Link href="/" aria-label="La Rissto | Strona główna" className={`origin-left transition-transform duration-300 ${scrolled ? "scale-[0.78]" : "scale-100"}`}><Brand /></Link>
             <nav aria-label="Nawigacja główna" className="hidden items-center sm:ml-auto sm:mr-[min(4vw,48px)] sm:flex sm:gap-[min(5.5vw,68px)] sm:text-[clamp(13px,1.7vw,20px)]">
               {links.map(([label, href]) => (
                 <Link className="py-3 underline-offset-4 hover:underline" key={href} href={href}>{label}</Link>
@@ -73,7 +66,7 @@ export function Header() {
                 aria-label="Zadzwoń do La Rissto"
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-ink px-4 text-[14px] font-semibold text-[#f5f1e8] transition-colors hover:bg-[#3e4036] sm:px-6 sm:text-[clamp(13px,1.5vw,17px)]"
               >
-                <PhoneIcon />
+                <PhoneIcon aria-hidden="true" className="size-4 shrink-0" />
                 <span className="hidden min-[420px]:inline">Zadzwoń</span>
               </a>
               <button
@@ -93,7 +86,6 @@ export function Header() {
         </Container>
       </header>
 
-      {/* Mobilne menu — przezroczysty czarny ekran z białymi pizzami w tle (poza <header>, bo backdrop-blur psuje position: fixed) */}
       <div
         id="mobile-menu"
         role="dialog"
@@ -145,7 +137,7 @@ export function Header() {
             href={restaurant.phoneHref}
             className="mx-auto inline-flex min-h-[52px] items-center justify-center gap-3 rounded-full border border-white/60 px-8 text-[16px] font-semibold tracking-wide"
           >
-            <PhoneIcon className="size-5 shrink-0" />
+            <PhoneIcon aria-hidden="true" className="size-5 shrink-0" />
             Zadzwoń
           </a>
         </div>
