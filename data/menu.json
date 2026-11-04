@@ -377,7 +377,7 @@
       },
       {
        "nazwa": "Grillowana pierś",
-       "cena": 35,
+       "cena": 50,
        "skladniki": [
         "pierś z kurczaka",
         "mix sałat",
@@ -395,11 +395,11 @@
       },
       {
        "nazwa": "Pollo ai Funghi",
-       "cena": 50,
+       "cena": 60,
        "skladniki": [
         "grillowana pierś z kurczaka",
         "sos śmietanowo-grzybowy",
-        "makaron smażony w sosie aglio e olio"
+        "makaron smażony w sosie Aglio e olio"
        ]
       },
       {
@@ -458,14 +458,14 @@
       },
       {
        "nazwa": "Tartare di Manzo",
-       "cena": 50,
+       "cena": 40,
        "skladniki": [
         "polędwica wołowa",
         "majonez sezamowy",
         "czosnek",
         "cebula",
-        "chipsy z parmezanu",
-        "kapary",
+        "chipsy z parmezanu kapara",
+      
         "pieczarka marynowana",
         "pieczywo"
        ]
@@ -477,7 +477,7 @@
      "pozycje": [
       {
        "nazwa": "Insalata",
-       "cena": 50,
+       "cena": 35,
        "skladniki": [
         "świeże liście sałaty",
         "rukola",
@@ -491,7 +491,7 @@
       },
       {
        "nazwa": "Cezar",
-       "cena": 60,
+       "cena": 45,
        "skladniki": [
         "mix sałat",
         "pomidorki koktajlowe",
@@ -504,7 +504,7 @@
       },
       {
        "nazwa": "Insalata di Spinaci",
-       "cena": 45,
+       "cena": 50,
        "skladniki": [
         "świeży szpinak",
         "szynka parmeńska",
@@ -552,7 +552,7 @@
       },
       {
        "nazwa": "Burger Classic",
-       "cena": 30,
+       "cena": 32,
        "skladniki": [
         "mięso wołowe",
         "bułka z sezamem",
@@ -565,7 +565,7 @@
       },
       {
        "nazwa": "Burger Pollo",
-       "cena": 32,
+       "cena": 30,
        "skladniki": [
         "polędwiczka z kurczaka",
         "bułka z sezamem",
@@ -653,16 +653,14 @@
        "nazwa": "Brownie",
        "cena": 30,
        "skladniki": [
-        "wilgotne ciasto czekoladowe podawane na sposób domowy"
+        "wilgotne ciasto czekoladowe o intensywnym smaku. podawane na sposób domowy"
        ]
       },
       {
        "nazwa": "Tiramisu",
        "cena": 30,
        "skladniki": [
-        "krem mascarpone",
-        "biszkopty nasączone kawą",
-        "kakao"
+        "Klasyczny włoski deser na bazie delikatnego kremu mascarpone. biszkoptów nasączonych kawą i nuty kako."
        ]
       },
       {
